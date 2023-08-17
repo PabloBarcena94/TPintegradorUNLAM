@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <!--LETRA DEL SITIO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <title>Virtual Cursos</title>
+    <script src="https://kit.fontawesome.com/37875ea4b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="header-container-top">
+          <div class="container-link-img">
+            <a href="index.html" class="link-img">
+              <img class="logo" src="img/logo2.png" alt="Logo"/>
+          </a>
+          </div>
+          <form action="#" method="get" class="form-search">
+            <label for="buscar"></label>
+            <input list="search" name="buscar" id="buscar" />
+            <datalist id="search">
+              <option value="Matematicas"></option>
+              <option value="Programación"></option>
+              <option value="Cocina"></option>
+              <option value="Carpintería"></option>
+              <option value="Big Mac"></option>
+            </datalist>
+          </form>
+          <div class="carrito">
+            <i class="fa-solid fa-cart-shopping carrito-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="contador">0</span></i>
+          </div>
+          <i class="fa-solid fa-bars hamburguer-icon"></i>
+        </div>
+        <nav class="navbar-responsive">
+          <ul class="navbar-responsive-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <nav class="nav_bar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+        <main class="main">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h1>Titulo Curso</h1>
+            <section class="inscripcion-container">
+              <article class="inscripcion-detalle"></article>
+                <article class="inscripcion-form-container">    
+                    <h2 class="inscripcion-h2">Inscripción</h2>
+                    <div class="form-container">
+                        <form class="form" action=# method="get">
+                            <input class="inscripcion-form-input" type="text" name="nombre" id="nom" placeholder="Ingresa tu nombre">
+                            <input class="inscripcion-form-input" type="text" name="apellido" id="apell" placeholder="Ingresa tu Apellido">
+                            <input class="inscripcion-form-input" type="number" name="DNI" id="DNI" placeholder="Ingresa tu DNI">
+                            <i class="fa-solid fa-circle-minus btn-restar-persona"></i>
+                        </form>
+                    </div>
+                    <div class="container-btn-sumar">
+                        <i class="fa-solid fa-circle-plus btn-sumar-persona"></i>
+                        <p>Agregar persona</p>
+                    </div>
+                    <div class="container-precio-btn">
+                        <button class="btn-inscribirse">Inscribirse</button>
+                        <p class="precio-total-inscripcion"></p>
+                    </div>
+                </article>  
+            </section>
+        </main>
+    </div>
+
+    <footer class="pie">
+        <div class="pie__div1">
+            <h3 class="pie__grupo">DATOS DEL GRUPO</h3>
+            <ul class="pie__grupoul">
+                <li class="pie__grupoli">Barcena, Pablo Andrés</li>
+                <li class="pie__grupoli">Mariano Mouhamed</li>
+                <li class="pie__grupoli">Franco Palavecino</li>
+            </ul>
+        </div>
+        <div class="pie__div2">
+            <h3 class="pie__categorias">CATEGORÍAS</h3>
+            <ul class="pie__ul">
+                <li class="pie__li"><a class="pie__a" href="index.html">Home</a></li>
+                <li class="pie__li"><a class="pie__a" href="calendario.html">Calendario</a></li>
+                <li class="pie__li"><a class="pie__a" href="giftcard.html">Gift Card</a></li>
+                <li class="pie__li"><a class="pie__a" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="pie__div3">
+            <a class="pie__redes" href=""><img src="img/instagram.png" alt="Instagram" width="20"></a>
+            <a class="pie__redes" href=""><img src="img/facebook.png" alt="Facebook" width="20"></a>
+            <a class="pie__redes" href=""><img src="img/twitter.png" alt="Twitter" width="20"></a>
+            <a class="pie__redes" href=""><img src="img/whatsapp.png" alt="Whatsapp" width="20"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/navBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+</body>
+
+</html>

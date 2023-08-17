@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="css/detalleCurso.css">
+    <!--LETRA DEL SITIO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://kit.fontawesome.com/37875ea4b6.js" crossorigin="anonymous"></script>
+    <title>Virtual Cursos</title>
+</head>
+<body>
+    <header>
+        <div class="header-container-top">
+          <div class="container-link-img">
+            <a href="index.html" class="link-img">
+              <img class="logo" src="img/logo2.png" alt="Logo"/>
+          </a>
+          </div>
+          <form action="#" method="get" class="form-search">
+            <label for="buscar"></label>
+            <input list="search" name="buscar" id="buscar" />
+            <datalist id="search">
+              <option value="Matematicas"></option>
+              <option value="Programación"></option>
+              <option value="Cocina"></option>
+              <option value="Carpintería"></option>
+              <option value="Big Mac"></option>
+            </datalist>
+          </form>
+          <div class="carrito">
+            <i class="fa-solid fa-cart-shopping carrito-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="contador">5</span></i>
+          </div>
+          <i class="fa-solid fa-bars hamburguer-icon"></i>
+        </div>
+        <nav class="navbar-responsive">
+          <ul class="navbar-responsive-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <nav class="nav_bar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main class="detCurso">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+      </div>
+        <section class="detalle-curso">
+                <!--CURSO PUESTO CON JS-->
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modal-inscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Te vas a inscribir al siguiente curso</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body-inscripcion">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-confirmar-inscripcion" data-bs-dismiss="modal">Confirmar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+            <aside class="cursos-extras">
+            </aside>
+    </main>
+    <footer class="pie">
+        <div class="pie__div1">
+            <h3 class="pie__grupo">DATOS DEL GRUPO</h3>
+            <ul class="pie__grupoul">
+                <li class="pie__grupoli">Barcena, Pablo Andrés</li>
+                <li class="pie__grupoli">Mariano Mouhamed</li>
+                <li class="pie__grupoli">Franco Palavecino</li>
+            </ul>
+        </div>
+        <div class="pie__div2">
+            <h3 class="pie__categorias">CATEGORÍAS</h3>
+            <ul class="pie__ul">
+                <li class="pie__li"><a class="pie__a" href="index.html">Home</a></li>
+                <li class="pie__li"><a class="pie__a" href="calendario.html">Calendario</a></li>
+                <li class="pie__li"><a class="pie__a" href="giftcard.html">Gift Card</a></li>
+                <li class="pie__li"><a class="pie__a" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="pie__div3">
+            <a class="pie__redes" href=""><img src="img/instagram.png" alt="Instagram" width="20"></a>
+            <a class="pie__redes" href=""><img src="img/facebook.png" alt="Facebook" width="20"></a>
+            <a class="pie__redes" href=""><img src="img/twitter.png" alt="Twitter" width="20"></a>
+            <a class="pie__redes" href=""><img src="img/whatsapp.png" alt="Whatsapp" width="20"></a>
+        </div>
+    </footer>
+    <script src="js/detallecurso.js"></script>
+    <script src="js/navBar.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

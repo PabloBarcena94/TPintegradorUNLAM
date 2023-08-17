@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.dia-nombre{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.marcado{
+    color: white;
+    background-color: rgb(52, 52, 255);
+    padding: 5px;
+    display: inline;
+    border-radius: 50%;
+}
+
+.nuevo{
+    font-size:12px;
+    text-align: start;
+    width: 95%;
+    color: white;
+    border-radius: 2px;
+    padding: 2px 10px;
+    background-color: rgb(255, 196, 0);
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.h1-proximos{
+    text-align: center;
+    margin: 20px;
+}
+
+.fc-event-title-container{
+    width: 100% !important;
+    background-color: #727272 !important;
+    
+}
+
+.fc-event{
+    border-color: rgb(94, 94, 94) !important;
+}
+
+.fc-col-header-cell-cushion{
+    color: black !important;
+    text-decoration: none;
+}
+
+.fc-event-title{
+    width: 100px !important;
+    font-size: 12px;
+}
+
+.fc-daygrid-day-number{
+    color: black !important;
+    text-decoration: none;
+}
+
+.fc-daygrid-event-harness{
+    width: 100% !important;
+}
+
+@media(max-width:730px){
+    .nuevo{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:640px){
+    .nuevo{
+        font-size: 8px;
+    }
+}
+
+@media(max-width:640px){
+    .dia-nombre{
+        font-size: 12px;
+    }
+
+    .calendario-item-p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:460px){
+    .nuevo{
+        font-size: 5px;
+    }
+}

@@ -1,0 +1,138 @@
+.FormularioDeCurso {
+    margin: 20px 30px;
+}
+.inputContacto{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #DDDD;
+}
+.caja_consulta {
+    border-radius: 5px;
+    border: #b8b9b9 solid;
+}
+.cajaDeFormularios{
+    text-align: center;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.cajaDatos{
+    display:  flex;
+    flex-direction: column;
+    margin-top: 2%;
+    line-height: 40px;
+}
+.tituloContacto__h1{
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.contenedor__1 {
+    display: flex;
+    justify-content: space-around;
+}
+.botonDeEnviar{
+    background-image: none;
+    width: 200px;
+    margin: auto;
+    margin-top: 2%;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    order: 2;
+}
+
+.contenedor__2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.tituloContacto__h3{
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: 25px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 50px;
+    text-align: center;
+  }
+  
+.enviarConsulta {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+.popup button {
+    padding: 10px 20px;
+    border: black solid 1px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.popup button:hover {
+    background-color: rgb(230, 228, 228);
+}
+
+@media (max-width: 750px){
+    .contenedor__1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .cajaDeFormularios{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caja_consulta{
+        width: 80%;
+    }
+
+    .inputContacto{
+        width: 80%;
+    }
+}
+
+@media (max-width: 640px){
+    iframe{
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 540px){
+    .cajaDatos{
+        width: 100%;
+        padding: 5px;
+    }
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+}

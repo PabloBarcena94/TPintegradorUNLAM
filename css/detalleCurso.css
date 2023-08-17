@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*DETALLE CURSO*/
+
+.detCurso__h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.detCurso__artImg{
+    width: 350px;
+    height: 250px;
+    margin-left: 150px;
+    border: black solid 3px;
+    border-radius: 2px;
+    box-shadow: -10px 10px 10px grey;
+}
+.detCurso__art1 {
+    display: flex;
+    width: 100%;
+}
+.detCurso__divUXUI {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 500px;
+    border: #D5DBDB solid 1px;
+    padding-bottom: 20px;
+}
+.detCurso__divUXUI h2 {
+    text-align: center;
+    margin: 10px 5px;
+}
+.detCurso__ulUXUI {
+    list-style: none;
+    margin: 20px 20px;
+}
+.detCurso__ulUXUI li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: 900;
+    font-size: 17px;
+}
+.detCurso__ulUXUI p {
+    color: black;
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+.detCurso__inscribirme {
+    text-align: center;
+}
+.detCurso__inscribirme a {
+    padding: 10px 10px;
+    border: black solid 1px;
+    background-color: white;
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.detCurso__inscribirme a:hover {
+    background-color: rgb(230, 228, 228);
+}
+
+.contenidos-container{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    border: 1px solid #CCC;
+}
+
+.contenido-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenido-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    padding: 5px;
+}
+
+.contenido i{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.abrir-contenido{
+    min-height: 60px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.contenido-info-container{
+    height: 0px;
+    overflow: hidden;
+}
+
+.contenido-detalle{
+    display: flex; 
+    align-items: center;
+    gap: 3px;
+}
+
+.contenido-detalle p{
+    margin: 0 !important;
+}
+
+.detCurso__art2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.detCurso__art2 h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.detCurso__art2 div img {
+    width: 20px;
+    height: 20px;
+}
+
+.detCurso__intro {
+    margin-bottom: 0 !important;
+}
+
+.detCurso__botonplay{
+    cursor: pointer;
+}
+
+
+/*Docente*/
+
+
+.detCurso__docente{
+    display: flex;
+    background: #304352; 
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352); 
+    background: linear-gradient(to right, #d7d2cc, #304352);
+    padding: 5px;
+}
+
+.detCurso__art3 h2{
+    padding: 5px;
+}
+
+.detCurso__docente img {
+    width: 200px;
+    height: 200px;
+    margin: 30px 40px;
+    border: black solid 1px;
+}
+.detCurso__estrellas {
+    display: flex;
+    flex-direction: row;
+}
+.detCurso__estrellas button {
+    background-color: initial;
+    border: 0;
+    color: var(--color-inactivo);
+    transition: 1s all;
+    width: 30px;
+    height: 30px;
+}
+.detCurso__estrellas button:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+.detCurso__estrellas img {
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    border: none;
+}
+.detCurso__infoDocente h3 {
+    margin: 10px 0px;
+}
+.detCurso__infoDocente p {
+    margin: 10px 0px;
+    font-style: italic;
+} 
+
+
+aside {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+aside div {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: #D5DBDB solid 1px;
+    border-radius: 5px;
+    padding: 20px 10px;
+    
+}
+aside div img {
+    width: 330px;
+    height: 200px;
+    margin: 5px 5px;
+    border: #D5DBDB solid 1px;
+}
+aside div p {
+    margin: 5px 5px;
+}
+aside div h4 {
+    margin: 5px 5px;
+}
+aside div a {
+    margin: 5px 5px;
+    padding: 7px 7px;
+    border: black solid 1px;
+    background-color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+aside div a:hover {
+    background-color: rgb(230, 228, 228);
+}
+.buttonUxResearch {
+    margin-top: 5px;
+}
+.duracionPrecio {
+    margin-top: 25px;
+}
+
+.modal-body-inscripcion{
+    padding: 10px;
+}
+
+.btn-confirmar-inscripcion{
+    background-color: rgba(71, 255, 47, 0.686) !important;
+}
+
+.btn-confirmar-inscripcion:hover{
+    background-color: rgba(71, 255, 47, 0.952) !important;
+}
+
+@media (max-width:990px){
+    .detCurso__art1{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .detCurso__artImg{
+        margin: 0;
+    }
+    
+    .detCurso__divUXUI{
+        margin: 0;
+    }
+}
+
+@media(max-width:530px){
+    .detCurso__divUXUI{
+        width: 350px;
+    }
+    .detCurso__docente{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media(max-width:430px){
+    .contenidos-container{
+        width: 300px;
+    }
+
+    .detCurso__art2 div img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .contenido-detalle p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:380px){
+    .detCurso__artImg{
+        width: 300px;
+        height: 200px;
+    }
+
+    .detCurso__divUXUI{
+        width: 300px;
+    }
+}
